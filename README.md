@@ -1,2 +1,3 @@
-# Bootstrap
-This division contains bootstrap codes
+this divison contains Bootstrap codes
+boot strap is mobile first
+
