@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bootstrap collapse-accordition</title>
+    <!--css-->
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> 
+</head>
+<body>
+    <!--js file-->
+    <link rel="stylesheet" href="‪D:\bootstrap-4.3.1-dist\bootstrap\js\bootstrap.min.js"> 
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+   <!--header-->
+   <header>
+       <nav class="navbar navbar-expand-md bg-primary navbar-dark">
+           <div class="container">
+        <a href="" class="navbar-brand">
+            <img src="https://getbootstrap.com/docs/5.0/assets/brand/bootstrap-logo.svg" alt="" height="24" width="30" loading="lazy">
+        Bootstrap</a> 
+        <button class="navbar-toggler" data-target="#mynavbar" type="button" data-toggle=collapse>
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mynavbar">
+            <ul class="navbar-nav ml-auto text-white">
+                <li class="nav-item active">
+                <a href="" class="nav-link">Home</a></li>
+                <li class="nav-item dropdown">
+                <a href="" class="nav-link dropdown-toggle" data-toggle="dropdown" id="dropdown">About us</a>
+            <div class="dropdown-menu">
+                <a href="" class="dropdown-item">Facebook</a>
+                <a href="" class="dropdown-item">Twitter</a>
+                <a href="" class="dropdown-item">Youtube</a>
+            </div>
+            </li>
+                <li class="nav-item">
+                <a href="" class="nav-link">Contact us</a></li>
+            
+            </ul>
+        </div> 
+        </div>
+         
+       </nav>
+   </header>
+   <!-- bootstrap carosuel-->
+   <!-- <div class="carousel slide" data-ride="carosuel" id="my">
+       <ol class="carousel-indicators">
+        <li data-target="my" data-slide-to="0" class="active"></li>
+        <li data-target="my" data-slide-to="1"></li>
+        <li data-target="my" data-slide-to="2"></li>
+       </ol>
+       <div class="carosuel-inner">
+           <div class="carousel-item active">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfkjCunG49Q0kCD5U92Wj85Nq_InDvKJN3Eg&usqp=CAU" alt="" class="d-inline-block w-100">
+           </div>
+           <div class="carousel-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQu9ZMSCmxeZvwCOrnQI8Y3hPAuW-UQ5WdHw&usqp=CAU" alt="" class="d-inline-block w-100">
+        </div>
+        <div class="carousel-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR27g9Kr6c0J648vpP9-DBzk_rV3bkI51XQXQ&usqp=CAU" alt="" class="d-inline-block w-100">
+        </div>
+       </div>
+       <a href="#my"  class="carousel-control-prev" role="button" data-slide="prev">
+     <span class="carousel-control-prev-icon" aria-hidden="true" ></span>
+         <span class="sr-only">prev</span>
+     
+       </a>
+       <a href="" id="my" class="carousel-control-next" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">prev</span>
+        
+          </a>
+   </div>  
+   <div class="carousel slide" data-ride="carousel" id="mycarousel">
+    <ol class="carousel-indicators">
+        <li data-target="mycarousel" data-slide-to="0" class="active"></li>
+        <li data-target="mycarousel" data-slide-to="1" ></li>
+        <li data-target="mycarousel" data-slide-to="2" ></li>
+    </ol>
+    <div class="carousel-inner">
+    <div class="carousel-item  active">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfkjCunG49Q0kCD5U92Wj85Nq_InDvKJN3Eg&usqp=CAU" class="d-block w-100 " style="height: 800px;" alt="first image">
+    </div>
+    <div class="carousel-item">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQu9ZMSCmxeZvwCOrnQI8Y3hPAuW-UQ5WdHw&usqp=CAU" class="d-block w-100" alt="sec image"style="height: 800px;">
+    </div>
+    <div class="carousel-item">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR27g9Kr6c0J648vpP9-DBzk_rV3bkI51XQXQ&usqp=CAU" class="d-block w-100" alt="third image" style="height: 800px;">
+    </div>
+    </div>
+ <a href="#mycarousel" class="carousel-control-prev" role="button" data-slide="prev">
+     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+     <span class="sr-only">previous</span>
+ </a>
+ <a href="#mycarousel" class="carousel-control-next" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">next</span>
+</a>
+</div>-->
+<!--collase accordition-->
+<div class="container my-4">
+    <h4>Donlode links are below</h4>
+    <p>choose the downlode links based on your region</p>
+    <p>  <a href="#collapseex" class="btn btn-primary" data-toggle="collapse" aria-expanded="false" aria-controls="collapseex" role="button">server1</a>
+<button class="btn btn-primary" data-toggle="collapse" data-target="#collapseex" aria-expanded="false" aria-controls="collapseex">server2</button>
+    </p>
+    <div class="collapse" id="collapseex">
+    <div class="card card-body">
+        htts://google.com
+    </div>
+</div>
+<hr class="my-5">
+<div class="container" id="accordion">
+<h4>frequently asked questions</h4>
+<p>have any doubt? checkout frequently question</p>
+
+<div class="card">
+    <div class="card-header">
+        <a href="#collapsemy" data-toggle="collapse" class="card-link">
+            is this course free
+        </a>
+    </div>
+    <!--answer-->
+    <hr class="my-5">
+    <div id="collapsemy" class="collapse" data-parent="#accordion">
+        <div class="card-body">
+            yes,of course! everything free
+        </div>
+    </div>
+</div>
+<div class="card">
+    <div class="card-header">
+        <a href="#collapsemy1" data-toggle="collapse" class="card-link">
+            is this course free
+        </a>
+    </div>
+    <!--answer-->
+    <hr class="my-5">
+    <div id="collapsemy1" class="collapse" data-parent="#accordion">
+        <div class="card-body">
+            yes,of course! everything free
+        </div>
+    </div>
+</div>
+<div class="card">
+    <div class="card-header">
+        <a href="#collapsemy2" data-toggle="collapse" class="card-link">
+            is this course free
+        </a>
+    </div>
+    <!--answer-->
+    <hr class="my-5">
+    <div id="collapsemy2" class="collapse" data-parent="#accordion">
+        <div class="card-body">
+            yes,of course! everything free
+        </div>
+    </div>
+</div>
+</div>
+</div>
+</body>
+</html>
